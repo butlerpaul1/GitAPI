@@ -1,0 +1,44 @@
+#w {
+  display: block;
+  width: 800px;
+  margin: 0 auto;
+  padding: 15px 25px;
+  border-radius: 4px;
+  background: #222;
+  color: orange;
+  margin-top: 20px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+a {
+  color: #fff;
+}
+
+#ghapidata {
+  display: block;
+  padding: 25px 0;
+}
+
+#repos {
+  display: block;
+  padding: 25px 0;
+  allign: right;
+}
+
+#ghusername {
+  display: block;
+  padding: 5px 8px;
+  font-size: 1.4em;
+  color: #666;
+  width: 550px;
+  margin-bottom: 15px;
+}
+#ghsubmitbtn {
+  display: inline-block;
+  padding: 8px 18px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #444;
+  background-color: #eaeaea;
+  border-radius: 3px;
+}
+
