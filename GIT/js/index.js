@@ -24,7 +24,8 @@ $(function(){
         if(fullname == undefined) { fullname = username; }
         
         var outhtml =  '<div class="ghcontent"><div class="avi"><a href="'+profileurl+'" target="_blank"><img src="'+aviurl+'" width="80" height="80" alt="'+username+'"></a></div>';
-        outhtml = outhtml + '<p> User Profile: <br> Fullname: '+fullname+'<br> Usename: '+username+' <br>Email: '+email+'<br>Location: '+location+'<br>Number of Gists: '+gists+'</p></div>';
+        outhtml = outhtml + '<h2> User Profile </h2>' ;
+		outhtml = outhtml + '<p> Fullname: '+fullname+'<br> Usename: '+username+' <br>Email: '+email+'<br>Location: '+location+'<br>Number of Gists: '+gists+'</p></div>';
         outhtml = outhtml + '<div class="repolist clearfix">';
         
         var repositories;
@@ -38,7 +39,7 @@ $(function(){
           else {
             outhtml = outhtml + '<p><strong>Users Repos:</strong></p> <ul>';
             $.each(repositories, function(index) {
-              outhtml = outhtml + '<li><a href="'+repositories[index].html_url+'" target="_blank">'+repositories[index].name + '</a></li>';
+              outhtml = outhtml + '<li><a href="'+repositories[index].html_url+'" target="_blank">'+repositories[index].name + '<br>' + repositories[index].description +'</a></li>';
             });
             outhtml = outhtml + '</ul></div>'; 
           }
